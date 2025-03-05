@@ -1,0 +1,82 @@
+html {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(65, 64, 54);
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+button {
+    background-color: rgb(20, 189, 20);
+    width: 505px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: green;
+    font-weight: bold;
+}
+
+textarea, input {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 10px;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 700px;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgba(92, 92, 92, 0.697);
+}
+
+form > h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+div {
+    background-color: white;
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(92, 92, 92, 0.697);
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px;
+}
+
+a {
+    color: rgb(153, 234, 153);
+}
+
+.err {
+    color: darkred;
+    display: none;
+}

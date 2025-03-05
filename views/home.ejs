@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Blog</title>
+    
+    <link rel="stylesheet" href="/style/style.css">
+
+    
+</head>
+<body>
+    <form action="/submit" method="post" id="post-form">
+        <h1>Create a New Post</h1>
+        <fieldset>
+            <input type="text" maxlength="255" name="author" placeholder="Your name" id="author">
+            <span class="err" id="err-author">Name is required and can't have digits</span>
+
+            <input type="text" maxlength="255" name="title" placeholder="Title of your Post" id="title">
+            <span class="err" id="err-title">Title is required.</span>
+
+            <textarea maxlength="500" name="content" placeholder="Content of your post..." id="content"></textarea>
+            <span class="err" id="err-content">Please enter at least ten characters.</span>
+
+            <button type="submit">Submit</button>
+        </fieldset>   
+    </form>
+    <script src="/script/client-validation.js" defer></script>
+
+</body>
+</html>

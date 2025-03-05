@@ -1,0 +1,27 @@
+{
+  "name": "mini_blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Totakhil21/mini_blog_pp8.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Totakhil21/mini_blog_pp8/issues"
+  },
+  "homepage": "https://github.com/Totakhil21/mini_blog_pp8#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "mariadb": "^3.4.0"
+  }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Blog Entries</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <div>
+        <h1>All Posts</h1>
+        <% if (!Array.isArray(entries) || entries.length === 0) { %>
+            <p>No Posts Found</p>
+        <% } else { %>
+            <% for (let i = 0; i < entries.length; i++) { %>
+                <h2><%= entries[i].title %></h2>
+                <p><%= entries[i].content %></p>
+                <p>Author: <%= entries[i].author %></p>
+            <% } %>
+        <% } %>
+        <p><a href="/">Create a New Post</a> | <a href="/entries">View Admin Posts</a></p>
+    </div>
+</body>
+</html>
